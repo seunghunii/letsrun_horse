@@ -1,0 +1,199 @@
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.87"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.vutlha"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:46137"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "5f5165e06a4477c55663f29734649003"
+
+$id
+[1] "5f5165e06a4477c55663f29734649003"
+
+[[1]]
+NULL
+
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+
+Selenium message:unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'seunghuni', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.3'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x555e197f97a9 <unknown>
+
+
+에러: 	 Summary: UnknownError
+ 	 Detail: An unknown server-side error occurred while processing the command.
+	 Further Details: run errorDetails method
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+Error in checkError(res) : 
+  Undefined error in httr call. httr output: Failed to connect to localhost port 4444: 연결이 거부됨
+Calls: <Anonymous> -> queryRD -> checkError
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+
+Selenium message:unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'seunghuni', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.3'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x55c2fa7767a9 <unknown>
+
+
+에러: 	 Summary: UnknownError
+ 	 Detail: An unknown server-side error occurred while processing the command.
+	 Further Details: run errorDetails method
+실행이 정지되었습니다

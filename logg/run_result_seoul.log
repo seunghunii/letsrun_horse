@@ -1,0 +1,177 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+Loading required package: dplyr
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+Error: unexpected input in:
+"sapply(1:nrow(tb_pgsource),function(k)
+  tb_pgsource$�"
+Execution halted
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 11 12 11 12 11 13 11 13 11 13
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.87"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.2zptbV"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:35735"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "fcb8f4723f1d772cf6e2dd6894b99b84"
+
+$id
+[1] "fcb8f4723f1d772cf6e2dd6894b99b84"
+
+Error in MySQL() : 함수 "MySQL"를 찾을 수 없습니다
+Calls: dbConnect
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 12 11 12 11 12 11 13 11 13
+경고메시지(들): 
+In function_list[[i]](value) : 강제형변환에 의해 생성된 NA 입니다
+[1] "Connecting to remote server"
+Error in checkError(res) : 
+  Undefined error in httr call. httr output: Failed to connect to localhost port 4444: 연결이 거부됨
+Calls: <Anonymous> -> queryRD -> checkError
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 12 11 12 11 12 11 13 11 13
+경고메시지(들): 
+In function_list[[i]](value) : 강제형변환에 의해 생성된 NA 입니다
+[1] "Connecting to remote server"
+Error in checkError(res) : 
+  Undefined error in httr call. httr output: Failed to connect to localhost port 4444: 연결이 거부됨
+Calls: <Anonymous> -> queryRD -> checkError
+실행이 정지되었습니다

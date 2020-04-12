@@ -1,0 +1,522 @@
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+[1] TRUE
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Timeout was reached: Resolving timed out after 10000 milliseconds
+Calls: POST ... request_fetch -> request_fetch.write_memory -> <Anonymous>
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+[1] TRUE
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+[1] TRUE
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+[1] TRUE
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+[1] TRUE
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+  dplyr stringr   rvest    httr   tidyr     DBI  RMySQL 
+   TRUE    TRUE    TRUE    TRUE    TRUE    TRUE    TRUE 
+Error in .local(conn, statement, ...) : 
+  could not run statement: Table 'horse_bind.chulmainfo_seoul' doesn't exist
+Calls: chulmainfo_insert -> dbSendQuery -> dbSendQuery -> .local -> .Call
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Timeout was reached: Resolving timed out after 10000 milliseconds
+Calls: POST ... request_fetch -> request_fetch.write_memory -> <Anonymous>
+실행이 정지되었습니다

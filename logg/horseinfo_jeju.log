@@ -1,0 +1,302 @@
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.87"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.gUWMSa"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:40149"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "daa1f351e245464134692f4dc15b8a8e"
+
+$id
+[1] "daa1f351e245464134692f4dc15b8a8e"
+
+경고메시지(들): 
+Expected 3 pieces. Missing pieces filled with `NA` in 1 rows [7]. 
+[[1]]
+NULL
+
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.87"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.PWUHo6"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:44689"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "d9cdf2aee0059a30946db608bbe55815"
+
+$id
+[1] "d9cdf2aee0059a30946db608bbe55815"
+
+경고메시지(들): 
+Expected 3 pieces. Missing pieces filled with `NA` in 1 rows [7]. 
+[[1]]
+NULL
+
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+Error in checkError(res) : 
+  Undefined error in httr call. httr output: Failed to connect to localhost port 4444: 연결이 거부됨
+Calls: <Anonymous> -> queryRD -> checkError
+실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.87"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.fojKnp"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:39777"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "97535bbe88ae5360e16d3d2db9573824"
+
+$id
+[1] "97535bbe88ae5360e16d3d2db9573824"
+
+Error in .local(conn, statement, ...) : 
+  could not run statement: Column count doesn't match value count at row 1
+Calls: dbGetQuery ... .local -> dbSendQuery -> dbSendQuery -> .local -> .Call
+실행이 정지되었습니다
