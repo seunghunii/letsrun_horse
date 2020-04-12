@@ -6,7 +6,7 @@ sapply(pkgs,require,character.only = TRUE)
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
 
 # data crawl
-urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=1'
+urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=3'
 a <- POST(urll)
 b <- read_html(a) %>% html_table()
 
@@ -30,7 +30,7 @@ remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
-  urll_jockey <- 'http://race.kra.co.kr/jockey/ProfileJockeyListActive.do?Act=09&Sub=1&meet=1'
+urll_jockey <- 'http://race.kra.co.kr/jockey/ProfileJockeyListActive.do?Act=09&Sub=1&meet=3'
 
 httml <- read_html(urll_jockey) %>%
   html_node('#contents > div.tableType2.normal_title > table') %>% 
@@ -144,7 +144,7 @@ sapply(1:nrow(tmp),function(l){
       sqll_ua <- paste0(colnames(df_dataa))
       sqll_ub <- paste0("'",df_dataa[j,],"'")
       sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-      sqll <- paste0('insert ignore into record_chulmainfo_seoul values (',sqll,')')
+      sqll <- paste0('insert ignore into record_chulmainfo_busan values (',sqll,')')
       dbGetQuery(con,sqll)
     })
     dbDisconnect(con)
