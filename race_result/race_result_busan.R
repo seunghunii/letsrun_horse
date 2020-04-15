@@ -4,7 +4,7 @@ sapply(pkgs,require,character.only = TRUE)
 
 # java -jar selenium-server-standalone-3.141.59.jar 
 
-urll = 'http://race.kra.co.kr/raceScore/ScoretableScoreList.do?Act=04&Sub=1&meet=2'
+urll = 'http://race.kra.co.kr/raceScore/ScoretableScoreList.do?Act=04&Sub=1&meet=3'
 
 # get race_info(num)
 tb_pgsource <-  read_html(urll) %>% html_table() %>% data.frame()
@@ -32,7 +32,7 @@ remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
-for(k in 2:4){
+for(k in 2:7){
   
   xppath <- paste0('/html/body/div[1]/div[2]/div[1]/div[2]/table/tbody/tr[',k,']/td[3]/p/a[',1:tb_pgsource$race[k],']')
   
@@ -56,16 +56,15 @@ for(k in 2:4){
     run_info <- run_info %>% unite(date,y,m,d,sep='-')
     
     df_dataa <- remdr$getPageSource()[[1]] %>% 
-      read_html() %>%
-      html_nodes(css='#contents > div:nth-child(9) > table')
+                  read_html() %>%
+                  html_nodes(css='#contents > div:nth-child(9) > table')
     
     df_dataa <- df_dataa %>%
-      html_table(fill=TRUE) %>%
-      data.frame()
+                  html_table(fill=TRUE) %>%
+                  data.frame()
     
-    df_dataa <- cbind(df_dataa[,c(1:3)],'한',df_dataa[,c(4:ncol(df_dataa))])
     colnames(df_dataa) <- c('rank','horse_num','horse_name','born','sex','age',
-                            'weight','rating','jockey','trainer','owner','record',
+                            'weight','rating','jockey','trainer','owner',
                             'arrive_diff', 'horse_weight','single_win','contin_win',
                             'kit')
     
@@ -85,8 +84,21 @@ for(k in 2:4){
     df_dataa$rank <- na.replace(df_dataa$rank,999)
     df_dataa[,c('single_win','contin_win')] <- apply(df_dataa[,c('single_win','contin_win')],2,
                                                      function(x) str_replace_all(x,'----','0'))
-    df_dataa$record <- ifelse(df_dataa$record=='','not_run',df_dataa$record)
-    df_dataa <- df_dataa[,c(1:11,23,12:22)]
+  
+    df_record <- remdr$getPageSource()[[1]] %>% 
+      read_html() %>%
+      html_nodes(css='#contents > div:nth-child(10) > table')
+    
+    df_record <- df_record %>%
+      html_table(fill=TRUE) %>%
+      data.frame()
+    
+    record <- df_record$경주기록
+      
+    df_dataa <- cbind(df_dataa[,c(1:11,22,12:15)],record,df_dataa[,16:21])
+    df_dataa$record <- as.character(df_dataa$record)
+    df_dataa$record <- ifelse(df_dataa$record=='','0:0',df_dataa$record)
+    df_dataa$record <- ms(df_dataa$record) %>% seconds %>% str_remove_all('S')
     
     for(j in 1:nrow(df_dataa)){
       sqll <- paste(df_dataa[j,],collapse = "','") %>% str_remove_all('\\\\')
@@ -95,7 +107,7 @@ for(k in 2:4){
       sqll_ua <- paste0(colnames(df_dataa))
       sqll_ub <- paste0("'",df_dataa[j,],"'")
       sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-      sqll <- paste0('insert into race_result_jeju values (',sqll,
+      sqll <- paste0('insert into race_result_busan values (',sqll,
                      ') on duplicate key update ',sqll_ud)
       dbGetQuery(con,sqll)
     }

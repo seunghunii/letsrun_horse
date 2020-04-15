@@ -98,7 +98,8 @@
       df_dataa <- cbind(df_dataa[,c(1:11,22,12:15)],record,df_dataa[,16:21])
       df_dataa$record <- as.character(df_dataa$record)
       df_dataa$record <- ifelse(df_dataa$record=='','not_run',df_dataa$record)
-
+      df_dataa$record <- ms(df_dataa$record) %>% seconds %>% str_remove_all('S')
+      
       for(j in 1:nrow(df_dataa)){
         sqll <- paste(df_dataa[j,],collapse = "','") %>% str_remove_all('\\\\')
         sqll <- paste0("'",sqll,"'")
@@ -107,9 +108,9 @@
         sqll_ub <- paste0("'",df_dataa[j,],"'")
         sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
 
-        sqll <- paste0('insert into race_result_seoul values (',sqll,
-                       ') on duplicate key update ',sqll_ud)
-        dbGetQuery(con,sqll)
+        #sqll <- paste0('insert into race_result_seoul values (',sqll,
+                       #') on duplicate key update ',sqll_ud)
+        #dbGetQuery(con,sqll)
       }
     }
     dbDisconnect(con)
