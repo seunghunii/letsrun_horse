@@ -32,13 +32,14 @@ remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
-for(k in 2:7){
+for(k in 2:8){
   
   xppath <- paste0('/html/body/div[1]/div[2]/div[1]/div[2]/table/tbody/tr[',k,']/td[3]/p/a[',1:tb_pgsource$race[k],']')
   
   con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
                    host='175.119.87.54',dbname='horse',port=9560)
-  dbGetQuery(con,'set names utf8')
+  dbGetQuery(con,'set names utf8mb4')
+  dbGetQuery(con,'set charset utf8mb4')
   
   for(i in 1:length(xppath)){
     remdr$navigate(urll)
@@ -65,13 +66,11 @@ for(k in 2:7){
     
     colnames(df_dataa) <- c('rank','horse_num','horse_name','born','sex','age',
                             'weight','rating','jockey','trainer','owner',
-                            'arrive_diff', 'horse_weight','single_win','contin_win',
-                            'kit')
+                            'arrive_diff', 'horse_weight','single_win','contin_win','kit')
     
     df_dataa <- cbind(run_info[,-4],df_dataa)
     
     df_dataa$age <- str_remove_all(df_dataa$age,'[^[:digit:]]')
-    df_dataa$owner <- str_remove_all(df_dataa$owner,'[^[:alpha:]]')
     df_dataa <- df_dataa %>% separate(horse_weight,sep='\\(',
                                       into = c('horse_weight','weight_diff'))
     df_dataa$weight_diff <- str_remove_all(df_dataa$weight_diff,'\\)')
@@ -84,7 +83,9 @@ for(k in 2:7){
     df_dataa$rank <- na.replace(df_dataa$rank,999)
     df_dataa[,c('single_win','contin_win')] <- apply(df_dataa[,c('single_win','contin_win')],2,
                                                      function(x) str_replace_all(x,'----','0'))
-  
+    df_dataa$jockey <- df_dataa$jockey %>% str_remove_all('\\(+[[:digit:]|-[:digit:]]+\\)')
+    df_dataa$owner <- df_dataa$owner %>% str_remove_all('♠')
+    
     df_record <- remdr$getPageSource()[[1]] %>% 
       read_html() %>%
       html_nodes(css='#contents > div:nth-child(10) > table')
@@ -93,7 +94,9 @@ for(k in 2:7){
       html_table(fill=TRUE) %>%
       data.frame()
     
-    record <- df_record$경주기록
+    # df_record <- df_record[2:nrow(df_record),] busan에는 필요없는 처리
+    # 부산은 경기기록에서 시간 나오는 테이블 열이 하나임. 서울은 두개임.
+    record <- df_record$경주기록 
       
     df_dataa <- cbind(df_dataa[,c(1:11,22,12:15)],record,df_dataa[,16:21])
     df_dataa$record <- as.character(df_dataa$record)
@@ -107,8 +110,7 @@ for(k in 2:7){
       sqll_ua <- paste0(colnames(df_dataa))
       sqll_ub <- paste0("'",df_dataa[j,],"'")
       sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-      sqll <- paste0('insert into race_result_busan values (',sqll,
-                     ') on duplicate key update ',sqll_ud)
+      sqll <- paste0('insert ignore into race_result_busan values (',sqll,')')
       dbGetQuery(con,sqll)
     }
   }

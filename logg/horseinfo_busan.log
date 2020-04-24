@@ -427,3 +427,113 @@ Error in checkError(res) :
   Undefined error in httr call. httr output: Failed to connect to localhost port 4444: 연결이 거부됨
 Calls: <Anonymous> -> queryRD -> checkError
 실행이 정지되었습니다
+필요한 패키지를 로딩중입니다: dplyr
+
+다음의 패키지를 부착합니다: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+필요한 패키지를 로딩중입니다: stringr
+필요한 패키지를 로딩중입니다: rvest
+필요한 패키지를 로딩중입니다: xml2
+필요한 패키지를 로딩중입니다: RSelenium
+필요한 패키지를 로딩중입니다: httr
+필요한 패키지를 로딩중입니다: tidyr
+필요한 패키지를 로딩중입니다: DBI
+필요한 패키지를 로딩중입니다: RMySQL
+필요한 패키지를 로딩중입니다: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "80.0.3987.163"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.uEuz0p"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:34255"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$webdriver.remote.sessionid
+[1] "249135441b14c5e283b909a4f85fb580"
+
+$id
+[1] "249135441b14c5e283b909a4f85fb580"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
