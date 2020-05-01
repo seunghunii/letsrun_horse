@@ -23,8 +23,8 @@ remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
-#for(k in 1:length(xppath)){
-sapply(1:length(xppath),function(k){
+for(k in 1:length(xppath)){
+#sapply(1:length(xppath),function(k){
   remdr$navigate(urll)
   
   ab <- remdr$findElement(using = 'xpath',xppath[k])
@@ -46,15 +46,21 @@ sapply(1:length(xppath),function(k){
                      host='175.119.87.54',dbname='horse',port=9560)
     dbGetQuery(con,'set names utf8')
     
+    Sys.sleep(0.5)
+    
     xppath2 <- paste0(
       '/html/body/div[1]/div[2]/form/div/div[2]/table/tbody/tr[',l,']/td[2]/a')
     ab <- remdr$findElement(using = 'xpath',xppath2)
     ab$clickElement()
     
+    Sys.sleep(0.5)
+    
     # 경주성적 클릭
     js_record <- '/html/body/div[1]/div[2]/form/div/ul/li[3]/a'
     ab <- remdr$findElement(using = 'xpath',js_record)
     ab$clickElement()
+    
+    Sys.sleep(0.5)
     
     # 경주마 프로필의 
     js_tb <- '/html/body/div[1]/div[2]/form[1]/div/div[2]/table'
@@ -102,9 +108,9 @@ sapply(1:length(xppath),function(k){
       df_record <- df_record %>% separate(date,sep='\\]',
                                           into = c('region','date'),
                                           fill = 'left')
-      df_record$region <- na.replace(df_record$region,'서울')
-      df_record$region <- str_replace_all(df_record$region,'\\[부','부산')
-      df_record$region <- str_replace_all(df_record$region,'\\[해외','해외')
+      df_record$region <- na.replace(df_record$region,'seoul')
+      df_record$region <- str_replace_all(df_record$region,'\\[부','busan')
+      df_record$region <- str_replace_all(df_record$region,'\\[해외','foreign')
       df_record$horse_weight <- str_replace_all(df_record$horse_weight,
                                                 '^$','0')
       df_record$weight_diff <- na.replace(df_record$weight_diff,99)
@@ -118,8 +124,8 @@ sapply(1:length(xppath),function(k){
                                  '0:0',df_record$record)
       df_record$record <- ms(df_record$record) %>% seconds %>% str_remove_all('S')
       
-      #for(j in 1:nrow(df_record)){
-      sapply(1:nrow(df_record),function(j){
+      for(j in 1:nrow(df_record)){
+      #sapply(1:nrow(df_record),function(j){
         
         sqll <- paste(df_record[j,],collapse = "','") %>% str_remove_all('\\\\')
         sqll <- paste0("'",sqll,"'")
@@ -131,10 +137,11 @@ sapply(1:length(xppath),function(k){
         sqll <- paste0('insert into horseinfo_record_seoul values (',sqll,
                         ') on duplicate key update ',sqll_ud)
         dbGetQuery(con,sqll)
-      })
+      }#)
     } 
     dbDisconnect(con)
+    Sys.sleep(0.5)
     }
-  Sys.sleep(0.1)
-})
+  Sys.sleep(2)
+}#)
 remdr$closeall()

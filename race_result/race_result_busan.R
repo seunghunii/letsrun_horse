@@ -103,6 +103,13 @@ for(k in 2:8){
     df_dataa$record <- ifelse(df_dataa$record=='','0:0',df_dataa$record)
     df_dataa$record <- ms(df_dataa$record) %>% seconds %>% str_remove_all('S')
     
+    options(digits=5)
+    df_jockey <- dbGetQuery(con,'select * from jockey_info')
+    df_dataa <- left_join(df_dataa,df_jockey[,c(1,9:14)],by = 'jockey')
+    
+    df_trainer <- dbGetQuery(con,'select * from trainer_info')
+    df_dataa <- left_join(df_dataa,df_trainer[,c(1,8:13)],by = 'trainer')
+    
     for(j in 1:nrow(df_dataa)){
       sqll <- paste(df_dataa[j,],collapse = "','") %>% str_remove_all('\\\\')
       sqll <- paste0("'",sqll,"'")

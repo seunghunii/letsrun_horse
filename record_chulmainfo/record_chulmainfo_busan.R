@@ -6,7 +6,7 @@ sapply(pkgs,require,character.only = TRUE)
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
 
 # data crawl
-urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=1'
+urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=3'
 a <- POST(urll)
 b <- read_html(a) %>% html_table()
 
@@ -20,55 +20,6 @@ tmp <- df %>% separate(run_date,c('date','day'),'\\(',extra='drop',fill = 'right
 tmp$day <- tmp$day %>% str_remove_all('[^[:alpha:]]') %>% str_trim()
 tmp$date <- str_trim(tmp$date)
 tmp$etc <- ifelse(tmp$etc == '','NA',tmp$etc)
-
-####get jockey start####
-eCaps <- list(
-  chromeOptions = list(
-    args = c('--headless', '--disable-gpu')))
-
-remdr <- remoteDriver(port=4444,browser='chrome',
-                      extraCapabilities = eCaps)
-remdr$open()
-
-  urll_jockey <- 'http://race.kra.co.kr/jockey/ProfileJockeyListActive.do?Act=09&Sub=1&meet=1'
-
-httml <- read_html(urll_jockey) %>%
-  html_node('#contents > div.tableType2.normal_title > table') %>% 
-  html_table()
-httml[,2] <- str_remove_all(httml[,2],'[(]-2[)]')
-
-result_df <- matrix(nrow=nrow(httml),
-                    ncol=4) %>% data.frame()
-
-for(k in 1:nrow(httml)){
-  remdr$navigate(urll_jockey)
-  
-  css_sel <- paste0('#contents > div.tableType2.normal_title > table > tbody > tr:nth-child(',k,') > td:nth-child(2) > div > a')
-  aa <- remdr$findElement('css selector',css_sel)
-  aa$clickElement()
-  
-  httml_sel <- remdr$getPageSource()
-  aa <- httml_sel[[1]] %>% 
-    read_html() %>% 
-    html_nodes('#contents > div.tableType1 > table')
-  info <- aa[[1]] %>% html_table()
-  info <- info[2,2:5]
-  
-  info[,1] <- str_remove_all(info[,1],'[(](.*?)[)]|전')
-  info[,c(2:4)] <- sapply(2:4,function(x)
-    str_remove_all(info[,x],'%|승률|복승률|연승률|:') %>% str_trim())
-  
-  result_df[k,1:4] <- info[1,1:4]}
-
-result_df <- cbind(httml[,2],result_df)
-colnames(result_df) <- c('jockey','jockey_runcount','jockey_win1','jockey_win2','jockey_win3')
-
-result_df[,c(3:5)] <- apply(result_df[,c(3:5)],2,
-                            function(x) str_replace_all(x,'^$','0.0'))
-
-result_df[,1] <- str_replace_all(result_df[,1],'^$','0')
-remdr$closeall()
-####get jockey end####
 
 eCaps <- list(
   chromeOptions = list(
@@ -117,6 +68,9 @@ sapply(1:nrow(tmp),function(l){
     tmp_sep$run_ord <- str_remove_all(tmp_sep$run_ord,'R')
     tmp_sep <- tmp_sep %>% separate(rank,sep='/',extra = 'drop',fill = 'right',
                                     into=c('rank','total_run'))
+    
+    tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
+                                                      function(x) str_replace_all(x,'^$','0:0.0'))
     tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
                                                       function(x) ms(x) %>% seconds %>% str_remove_all('S'))
     tmp_sep <- tmp_sep %>% separate(horse_weight,sep='\\(',extra = 'drop',fill = 'right',
@@ -131,12 +85,14 @@ sapply(1:nrow(tmp),function(l){
     df_dataa$quickness <- df_dataa$quickness %>% str_replace_all('^$','0')
     df_dataa[,c('S1F','G3F','G1F')] <- sapply(df_dataa[,c('S1F','G3F','G1F')],
                                               function(v)na.replace(v,0))
-    df_dataa <- cbind(left_join(df_dataa[,1:12],result_df,by = 'jockey'),
-                      df_dataa[,13:ncol(df_dataa)])
     
     con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
                      host='175.119.87.54',dbname='horse',port=9560)
     dbGetQuery(con,'set names utf8')
+    
+    df_jockey <- dbGetQuery(con,'select * from jockey_info')
+    df_dataa <- cbind(left_join(df_dataa[,1:12],df_jockey[,c(1,9:14)],by = 'jockey'),
+                      df_dataa[,13:ncol(df_dataa)])
     
     sapply(1:nrow(df_dataa),function(j){
       sqll <- paste(df_dataa[j,],collapse = "','") %>% str_remove_all('\\\\')
@@ -144,7 +100,7 @@ sapply(1:nrow(tmp),function(l){
       sqll_ua <- paste0(colnames(df_dataa))
       sqll_ub <- paste0("'",df_dataa[j,],"'")
       sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-      sqll <- paste0('insert ignore into record_chulmainfo_seoul values (',sqll,')')
+      sqll <- paste0('insert ignore into record_chulmainfo_busan values (',sqll,')')
       dbGetQuery(con,sqll)
     })
     dbDisconnect(con)

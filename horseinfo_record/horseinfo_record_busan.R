@@ -102,9 +102,9 @@ sapply(1:length(xppath),function(k){
       df_record <- df_record %>% separate(date,sep='\\]',
                                           into = c('region','date'),
                                           fill = 'left')
-      df_record$region <- na.replace(df_record$region,'부산')
-      df_record$region <- str_replace_all(df_record$region,'\\[서','서울')
-      df_record$region <- str_replace_all(df_record$region,'\\[해외','해외')
+      df_record$region <- na.replace(df_record$region,'busan')
+      df_record$region <- str_replace_all(df_record$region,'\\[서','seoul')
+      df_record$region <- str_replace_all(df_record$region,'\\[해외','foreign')
       df_record$horse_weight <- str_replace_all(df_record$horse_weight,
                                                 '^$','0')
       df_record$weight_diff <- na.replace(df_record$weight_diff,99)
@@ -134,7 +134,7 @@ sapply(1:length(xppath),function(k){
       })
     }
     dbDisconnect(con)
-    Sys.sleep(0.1)
+    Sys.sleep(0.5)
     }
   Sys.sleep(2)
 })

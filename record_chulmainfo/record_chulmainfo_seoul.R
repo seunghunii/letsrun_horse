@@ -6,7 +6,7 @@ sapply(pkgs,require,character.only = TRUE)
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
 
 # data crawl
-urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=3'
+urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=1'
 a <- POST(urll)
 b <- read_html(a) %>% html_table()
 
@@ -68,6 +68,9 @@ sapply(1:nrow(tmp),function(l){
     tmp_sep$run_ord <- str_remove_all(tmp_sep$run_ord,'R')
     tmp_sep <- tmp_sep %>% separate(rank,sep='/',extra = 'drop',fill = 'right',
                                     into=c('rank','total_run'))
+    
+    tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
+                                                      function(x) str_replace_all(x,'^$','0:0.0'))
     tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
                                                       function(x) ms(x) %>% seconds %>% str_remove_all('S'))
     tmp_sep <- tmp_sep %>% separate(horse_weight,sep='\\(',extra = 'drop',fill = 'right',
@@ -82,12 +85,14 @@ sapply(1:nrow(tmp),function(l){
     df_dataa$quickness <- df_dataa$quickness %>% str_replace_all('^$','0')
     df_dataa[,c('S1F','G3F','G1F')] <- sapply(df_dataa[,c('S1F','G3F','G1F')],
                                               function(v)na.replace(v,0))
-    df_dataa <- cbind(left_join(df_dataa[,1:12],result_df,by = 'jockey'),
-                      df_dataa[,13:ncol(df_dataa)])
-    
+  
     con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
                      host='175.119.87.54',dbname='horse',port=9560)
     dbGetQuery(con,'set names utf8')
+    
+    df_jockey <- dbGetQuery(con,'select * from jockey_info')
+    df_dataa <- cbind(left_join(df_dataa[,1:12],df_jockey[,c(1,9:14)],by = 'jockey'),
+                      df_dataa[,13:ncol(df_dataa)])
     
     sapply(1:nrow(df_dataa),function(j){
       sqll <- paste(df_dataa[j,],collapse = "','") %>% str_remove_all('\\\\')
@@ -95,7 +100,7 @@ sapply(1:nrow(tmp),function(l){
       sqll_ua <- paste0(colnames(df_dataa))
       sqll_ub <- paste0("'",df_dataa[j,],"'")
       sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-      sqll <- paste0('insert ignore into record_chulmainfo_busan values (',sqll,')')
+      sqll <- paste0('insert ignore into record_chulmainfo_seoul values (',sqll,')')
       dbGetQuery(con,sqll)
     })
     dbDisconnect(con)

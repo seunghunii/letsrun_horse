@@ -53,26 +53,21 @@ tmp <- cbind(tmp[,1:4],
              weight_type=unlist(weight_type_list),tmp[,5:ncol(tmp)])
 tmp$weight_type <- as.character(tmp$weight_type)
 
-# automatic function
-chulmainfo_insert <- function(x){
-  # connect db, set utf8
-  con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                   host='175.119.87.54',dbname='horse',port=9560)
-  dbGetQuery(con,'set names utf8')
-  for(k in 1:nrow(x)){
-    sqlll <- paste(x[k,],collapse="','") %>% str_remove_all('\\\\')
-    dataa <- paste0(c("'",sqlll,"'"),collapse='')
+# connect db, set utf8
+con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
+                 host='175.119.87.54',dbname='horse',port=9560)
+dbGetQuery(con,'set names utf8')
+
+for(k in 1:nrow(tmp)){
+  sqlll <- paste(tmp[k,],collapse="','") %>% str_remove_all('\\\\')
+  dataa <- paste0(c("'",sqlll,"'"),collapse='')
     
-    sqll_ua <- paste0(colnames(tmp))
-    sqll_ub <- paste0("'",tmp[k,],"'")
-    sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
+  sqll_ua <- paste0(colnames(tmp))
+  sqll_ub <- paste0("'",tmp[k,],"'")
+  sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
     
-    sqll  <- paste0('insert into chulmainfo_seoul values(',dataa,
-                    ') on duplicate key update ',sqll_ud) %>% str_remove_all('\\\\')
-    dbSendQuery(con,sqll)
-    #print(sqll)
+  sqll  <- paste0('insert into chulmainfo_seoul values(',dataa,
+                  ') on duplicate key update ',sqll_ud) %>% str_remove_all('\\\\')
+  dbGetQuery(con,sqll)
   }
-  dbClearResult(dbListResults(con)[[1]])
-  dbDisconnect(con)
-}
-chulmainfo_insert(tmp)
+dbDisconnect(con)
