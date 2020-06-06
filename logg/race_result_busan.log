@@ -1,0 +1,455 @@
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 11  6 11  6 11  6 12  6 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.tlm8EW"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:43574"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "78ad16c104b04258fb2ee4a889798684"
+
+$id
+[1] "78ad16c104b04258fb2ee4a889798684"
+
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 11  6 11  6 11  6 12  6 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.IPfizg"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:40307"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "25bd8b14fc6f2d65d69486cd60fe353a"
+
+$id
+[1] "25bd8b14fc6f2d65d69486cd60fe353a"
+
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 11  6 11  6 11  6 12  6 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.96KRTv"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:41383"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "58ebcbcfd5e7c4dcfcdca45bb99df8e5"
+
+$id
+[1] "58ebcbcfd5e7c4dcfcdca45bb99df8e5"
+
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 11  6 11  6 11  6 12  6 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.65yw6e"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:45180"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "b205049a5899c2ad04bbddd4fd0adceb"
+
+$id
+[1] "b205049a5899c2ad04bbddd4fd0adceb"
+
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RSelenium
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] NA 11  6 11  6 11  6 12  6 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.sxK9MN"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:36907"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "7db8135efe5e7a0577ba3b9960e765ef"
+
+$id
+[1] "7db8135efe5e7a0577ba3b9960e765ef"
+
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
