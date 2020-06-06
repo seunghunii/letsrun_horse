@@ -42,8 +42,8 @@ sapply(1:length(xppath),function(k){
     ab <- remdr$findElement(using = 'xpath',xppath[k])
     ab$clickElement()
     
-    con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                     host='175.119.87.54',dbname='horse',port=9560)
+    con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                     host='49.50.165.83',dbname='horse',port=7325)
     dbGetQuery(con,'set names utf8')
     
     xppath2 <- paste0(

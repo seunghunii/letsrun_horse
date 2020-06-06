@@ -553,3 +553,483 @@ NULL
 [[1]]
 NULL
 
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.xGVfNR"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:39937"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "f80a1aa1610c9d3da21fbf98e068c9fb"
+
+$id
+[1] "f80a1aa1610c9d3da21fbf98e068c9fb"
+
+
+Selenium message:No active session with ID f80a1aa1610c9d3da21fbf98e068c9fb
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.pAbsWQ"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:42223"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "37ece41b59219b6b406832d66dcc1caf"
+
+$id
+[1] "37ece41b59219b6b406832d66dcc1caf"
+
+
+Selenium message:No active session with ID 37ece41b59219b6b406832d66dcc1caf
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.KkPOok"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:35288"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "5fb2e614a3c73a92c48ba0c67f65c828"
+
+$id
+[1] "5fb2e614a3c73a92c48ba0c67f65c828"
+
+
+Selenium message:No active session with ID 5fb2e614a3c73a92c48ba0c67f65c828
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.RUtSTA"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:43883"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "e16a58280da42f5a06318406660d5b52"
+
+$id
+[1] "e16a58280da42f5a06318406660d5b52"
+
+
+Selenium message:No active session with ID e16a58280da42f5a06318406660d5b52
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   gtools 
+     TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.ZltHW6"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:41128"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "f8c53bdf1d556751a4ce8ba7f47767b7"
+
+$id
+[1] "f8c53bdf1d556751a4ce8ba7f47767b7"
+
+
+Selenium message:No active session with ID f8c53bdf1d556751a4ce8ba7f47767b7
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted

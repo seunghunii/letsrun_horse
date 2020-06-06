@@ -308,3 +308,603 @@ NULL
 [[1]]
 NULL
 
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: pbapply
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.bl86aV"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:41528"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "73530345bc5a0ad78fd11ec4deb856f0"
+
+$id
+[1] "73530345bc5a0ad78fd11ec4deb856f0"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: pbapply
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.eKVKR1"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:38485"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "ae6bcbdeac152cc89717cdc069bbb035"
+
+$id
+[1] "ae6bcbdeac152cc89717cdc069bbb035"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: pbapply
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.PlaMzm"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:33409"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "6a0bde49d37542a633ba2db57e98f2fb"
+
+$id
+[1] "6a0bde49d37542a633ba2db57e98f2fb"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: pbapply
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.ZWggEE"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:36643"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "211abf523bd0ec2946ff70fd749e9cf4"
+
+$id
+[1] "211abf523bd0ec2946ff70fd749e9cf4"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: stringr
+Loading required package: rvest
+Loading required package: xml2
+Loading required package: RSelenium
+Loading required package: pbapply
+Loading required package: httr
+Loading required package: tidyr
+Loading required package: DBI
+Loading required package: RMySQL
+Loading required package: gtools
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+[1] "Connecting to remote server"
+$acceptInsecureCerts
+[1] FALSE
+
+$browserName
+[1] "chrome"
+
+$browserVersion
+[1] "81.0.4044.138"
+
+$chrome
+$chrome$chromedriverVersion
+[1] "81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999})"
+
+$chrome$userDataDir
+[1] "/tmp/.com.google.Chrome.lEyAt4"
+
+
+$`goog:chromeOptions`
+$`goog:chromeOptions`$debuggerAddress
+[1] "localhost:35145"
+
+
+$networkConnectionEnabled
+[1] FALSE
+
+$pageLoadStrategy
+[1] "normal"
+
+$platformName
+[1] "linux"
+
+$proxy
+named list()
+
+$setWindowRect
+[1] TRUE
+
+$strictFileInteractability
+[1] FALSE
+
+$timeouts
+$timeouts$implicit
+[1] 0
+
+$timeouts$pageLoad
+[1] 300000
+
+$timeouts$script
+[1] 30000
+
+
+$unhandledPromptBehavior
+[1] "dismiss and notify"
+
+$`webauthn:virtualAuthenticators`
+[1] TRUE
+
+$webdriver.remote.sessionid
+[1] "236e16e5ff51b476e4dd555cd7514a2a"
+
+$id
+[1] "236e16e5ff51b476e4dd555cd7514a2a"
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+

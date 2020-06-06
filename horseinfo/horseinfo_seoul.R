@@ -18,7 +18,7 @@ eCaps <- list(
   chromeOptions = list(
     args = c('--headless', '--disable-gpu')))
 
-remdr <- remoteDriver(port=4444,browser='chrome',
+remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
@@ -52,8 +52,8 @@ sapply(1:length(xppath),function(k){
   doc[,c(2,3,4,5,12,13,14)] <- apply(doc[,c(2,3,4,5,12,13,14)],2,
                             function(x) na.replace(x,0))
   
-  con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                   host='175.119.87.54',dbname='horse',port=9560)
+  con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                   host='49.50.165.83',dbname='horse',port=7325)
   
   sapply(1:nrow(doc),function(i){
     sqll <- paste(collapse(doc[i,]),collapse = "','")

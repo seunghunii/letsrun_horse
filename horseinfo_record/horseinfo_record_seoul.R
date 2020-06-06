@@ -1,4 +1,4 @@
-pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
+pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply','lubridate',
           'httr','tidyr','DBI','RMySQL','gtools')
 sapply(pkgs,require,character.only = TRUE)
 # java -jar selenium-server-standalone-3.141.59.jar
@@ -42,8 +42,8 @@ for(k in 1:length(xppath)){
     ab <- remdr$findElement(using = 'xpath',xppath[k])
     ab$clickElement()
     
-    con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                     host='175.119.87.54',dbname='horse',port=9560)
+    con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                     host='49.50.165.83',dbname='horse',port=7325)
     dbGetQuery(con,'set names utf8')
     
     Sys.sleep(0.5)

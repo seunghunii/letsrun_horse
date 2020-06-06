@@ -38,8 +38,8 @@ for(j in 1:nrow(trainer_list)){
   trainer_list[j,7:12] <- df_trainer[,1:6]
 }
 
-con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                 host='175.119.87.54',dbname='horse',port=9560)
+con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                 host='49.50.165.83',dbname='horse',port=7325)
 dbGetQuery(con,'set names utf8')
 dbGetQuery(con,'delete from trainer_info where region="seoul"')
 

@@ -1,4 +1,4 @@
-pkgs <- c('dplyr','stringr','rvest','RSelenium',
+pkgs <- c('dplyr','stringr','rvest','RSelenium','gtools',
           'httr','tidyr','DBI','RMySQL','rlist')
 sapply(pkgs,require,character.only = TRUE)
 
@@ -33,8 +33,8 @@ remdr$open()
 
 result_bb <- list()
 
-con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                 host='175.119.87.54',dbname='horse',port=9560)
+con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                 host='49.50.165.83',dbname='horse',port=7325)
 dbGetQuery(con,'set names utf8')
 
 for(l in 1:nrow(tmp)){

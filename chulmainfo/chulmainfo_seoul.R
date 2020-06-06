@@ -25,7 +25,7 @@ eCaps <- list(
   chromeOptions = list(
     args = c('--headless', '--disable-gpu')))
 
-remdr <- remoteDriver(port=4444,browser='chrome',
+remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
 remdr$open()
 
@@ -54,8 +54,8 @@ tmp <- cbind(tmp[,1:4],
 tmp$weight_type <- as.character(tmp$weight_type)
 
 # connect db, set utf8
-con <- dbConnect(MySQL(),user='simon',password='Simon1304!',
-                 host='175.119.87.54',dbname='horse',port=9560)
+con <- dbConnect(MySQL(),user='race',password='koreafirst',
+                 host='49.50.165.83',dbname='horse',port=7325)
 dbGetQuery(con,'set names utf8')
 
 for(k in 1:nrow(tmp)){
