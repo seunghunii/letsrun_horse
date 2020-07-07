@@ -1,6 +1,10 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest','RSelenium','gtools',
-          'httr','tidyr','DBI','RMySQL','rlist')
-sapply(pkgs,require,character.only = TRUE)
+          'httr','tidyr','DBI','RMySQL','rlist','lubridate')
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 # java -jar selenium-server-standalone-3.141.59.jar
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
@@ -27,9 +31,9 @@ eCaps <- list(
   chromeOptions = list(
     args = c('--headless', '--disable-gpu')))
 
-remdr <- remoteDriver(port=4444,browser='chrome',
+remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 result_bb <- list()
 
@@ -59,15 +63,14 @@ for(l in 1:nrow(tmp)){
     str_remove_all('X') %>% data.frame()
   colnames(df_info_2) <- 'ab'
   df_info_2 <- df_info_2 %>% separate(col = 'ab',sep = '\\.',fill='right',
-                         into = c('date','day','run_ord','region','year_run')) %>%
-                         select(1:4)
+                                      into = c('date','day','run_ord','region','year_run')) %>%
+    select(1:4)
   df_info_final <- cbind(df_info_2,df_info_1)
   
   df_info_final$date <- df_info_final$date %>% str_replace_all('년|월','-') %>%
-                                               str_remove_all('일')
+    str_remove_all('일')
   df_info_final[,c('run_ord','distance')] <- lapply(df_info_final[,c('run_ord','distance')],function(x)
-                                                    str_remove_all(x,'[^[:digit:]]'))
-  df_info_final$region <- df_info_final$region %>% str_replace_all('서울','seoul')
+    str_remove_all(x,'[^[:digit:]]'))
   
   # 출전정보 데이터 전처리
   tmpp <- a[[3]]
@@ -100,3 +103,6 @@ for(l in 1:nrow(tmp)){
 }
 remdr$closeall()
 dbDisconnect(con)
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

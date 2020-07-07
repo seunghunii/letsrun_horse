@@ -1,6 +1,10 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
           'httr','tidyr','DBI','RMySQL','gtools')
-sapply(pkgs,require,character.only = TRUE)
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 # java -jar selenium-server-standalone-3.141.59.jar
 # data crawl
 urll = 'http://race.kra.co.kr/racehorse/ProfileHorsenameKinds.do?Act=08&Sub=1&meet=1'
@@ -20,7 +24,7 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 sapply(1:length(xppath),function(k){
   remdr$navigate(urll)
@@ -75,3 +79,4 @@ sapply(1:length(xppath),function(k){
   Sys.sleep(3)
 })
 remdr$closeall()
+print(paste0('code finish on ',Sys.time() %>% as.character()))

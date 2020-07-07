@@ -1,6 +1,10 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
           'httr','tidyr','DBI','RMySQL','gtools')
-sapply(pkgs,require,character.only = TRUE)
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 eCaps <- list(
   chromeOptions = list(
@@ -8,7 +12,7 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 ###trainer information###
 url_trainer <- 'http://race.kra.co.kr/trainer/profileTrainerList.do?Act=10&Sub=1&meet=3'
@@ -57,3 +61,6 @@ for(k in 1:nrow(trainer_list)){
 }
 dbDisconnect(con)
 remdr$closeall()
+
+#timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+#print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

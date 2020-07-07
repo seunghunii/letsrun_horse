@@ -1,6 +1,10 @@
-pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply','lubridate',
-          'httr','tidyr','DBI','RMySQL','gtools')
-sapply(pkgs,require,character.only = TRUE)
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
+pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
+          'httr','tidyr','DBI','RMySQL','gtools','lubridate')
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 # java -jar selenium-server-standalone-3.141.59.jar
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
 # data crawl
@@ -21,10 +25,10 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 for(k in 1:length(xppath)){
-#sapply(1:length(xppath),function(k){
+  #sapply(1:length(xppath),function(k){
   remdr$navigate(urll)
   
   ab <- remdr$findElement(using = 'xpath',xppath[k])
@@ -78,13 +82,13 @@ for(k in 1:length(xppath)){
       dbDisconnect(con)
       next
     } else {
-   
+      
       colnames(df_record) <- c('date','horse_num','run_type','distance','grade',
-                                'rank','jockey','weight','rating','record',
-                                'horse_weight','runway_status')
-        
+                               'rank','jockey','weight','rating','record',
+                               'horse_weight','runway_status')
+      
       df_record <- df_record %>% separate(date,sep='-',
-                                           into=c('date','run_ord'))
+                                          into=c('date','run_ord'))
       df_record$date <- str_replace_all(df_record$date,'/','-')
       df_record$run_ord <- str_remove_all(df_record$run_ord,'R')
       df_record$distance <- na.replace(df_record$distance,0)
@@ -98,7 +102,7 @@ for(k in 1:length(xppath)){
       df_record$weight <- na.replace(df_record$weight,0)
       df_record$horse_weight <- df_record$horse_weight %>% str_replace_all('^$','0(0)')
       df_record <- df_record %>% separate(horse_weight,sep = '\\(',
-                                           into = c('horse_weight','weight_diff'))
+                                          into = c('horse_weight','weight_diff'))
       df_record$weight_diff <- str_remove_all(df_record$weight_diff,'\\)')
       df_record <- cbind(horse_name = doc_name[l],df_record)
       df_record$horse_name <- as.character(df_record$horse_name)
@@ -122,26 +126,29 @@ for(k in 1:length(xppath)){
       record_unknown <- c('','실격','주행중지','출전제외','출전취소','^$')
       df_record$record <- ifelse(df_record$record %in% record_unknown,
                                  '0:0',df_record$record)
-      df_record$record <- ms(df_record$record) %>% seconds %>% str_remove_all('S')
+      df_record$record <- lubridate::ms(df_record$record) %>% seconds %>% str_remove_all('S')
       
       for(j in 1:nrow(df_record)){
-      #sapply(1:nrow(df_record),function(j){
+        #sapply(1:nrow(df_record),function(j){
         
         sqll <- paste(df_record[j,],collapse = "','") %>% str_remove_all('\\\\')
         sqll <- paste0("'",sqll,"'")
-         
+        
         sqll_ua <- paste0(colnames(df_record))
         sqll_ub <- paste0("'",df_record[j,],"'")
         sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
-         
+        
         sqll <- paste0('insert into horseinfo_record_seoul values (',sqll,
-                        ') on duplicate key update ',sqll_ud)
+                       ') on duplicate key update ',sqll_ud)
         dbGetQuery(con,sqll)
       }#)
     } 
     dbDisconnect(con)
     Sys.sleep(0.5)
-    }
+  }
   Sys.sleep(2)
 }#)
 remdr$closeall()
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

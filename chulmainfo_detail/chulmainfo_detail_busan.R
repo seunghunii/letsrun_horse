@@ -1,6 +1,10 @@
-pkgs <- c('dplyr','stringr','rvest','RSelenium',
-          'httr','tidyr','DBI','RMySQL','rlist')
-sapply(pkgs,require,character.only = TRUE)
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
+pkgs <- c('dplyr','stringr','rvest','RSelenium','gtools',
+          'httr','tidyr','DBI','RMySQL','rlist','lubridate')
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 # java -jar selenium-server-standalone-3.141.59.jar
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
@@ -29,7 +33,7 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 result_bb <- list()
 
@@ -99,3 +103,6 @@ for(l in 1:nrow(tmp)){
 }
 remdr$closeall()
 dbDisconnect(con)
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

@@ -1,0 +1,24 @@
+[1] "------"
+[1] "code start 2020-07-02 16:30:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium      httr     tidyr       DBI    RMySQL 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+data frame with 0 columns and 0 rows
+[1] TRUE
+[1] "code end 2020-07-02 16:30:18 ,time spent 0.28463 mins"

@@ -1,10 +1,14 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
-          'httr','tidyr','DBI','RMySQL','gtools')
-sapply(pkgs,require,character.only = TRUE)
-# java -jar /home/seunghuni/selenium/selenium-server-standalone-3.141.59.jar
+          'httr','tidyr','DBI','RMySQL','gtools','lubridate')
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
+# java -jar selenium-server-standalone-3.141.59.jar
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
 # data crawl
-urll = 'http://race.kra.co.kr/racehorse/ProfileHorsenameKinds.do?Act=08&Sub=1&meet=3'
+urll = 'http://race.kra.co.kr/racehorse/ProfileHorsenameKinds.do?Act=08&Sub=1&meet=1'
 
 xppath <- c(
   '/html/body/div[1]/div[2]/div/div[1]/table/tbody/tr[1]/td[4]/a',
@@ -21,10 +25,10 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
-#for(k in 1:length(xppath)){
-sapply(1:length(xppath),function(k){
+for(k in 1:length(xppath)){
+  #sapply(1:length(xppath),function(k){
   remdr$navigate(urll)
   
   ab <- remdr$findElement(using = 'xpath',xppath[k])
@@ -46,15 +50,21 @@ sapply(1:length(xppath),function(k){
                      host='49.50.165.83',dbname='horse',port=7325)
     dbGetQuery(con,'set names utf8')
     
+    Sys.sleep(0.5)
+    
     xppath2 <- paste0(
       '/html/body/div[1]/div[2]/form/div/div[2]/table/tbody/tr[',l,']/td[2]/a')
     ab <- remdr$findElement(using = 'xpath',xppath2)
     ab$clickElement()
     
+    Sys.sleep(0.5)
+    
     # 경주성적 클릭
     js_record <- '/html/body/div[1]/div[2]/form/div/ul/li[3]/a'
     ab <- remdr$findElement(using = 'xpath',js_record)
     ab$clickElement()
+    
+    Sys.sleep(0.5)
     
     # 경주마 프로필의 
     js_tb <- '/html/body/div[1]/div[2]/form[1]/div/div[2]/table'
@@ -72,7 +82,7 @@ sapply(1:length(xppath),function(k){
       dbDisconnect(con)
       next
     } else {
-    
+      
       colnames(df_record) <- c('date','horse_num','run_type','distance','grade',
                                'rank','jockey','weight','rating','record',
                                'horse_weight','runway_status')
@@ -102,8 +112,8 @@ sapply(1:length(xppath),function(k){
       df_record <- df_record %>% separate(date,sep='\\]',
                                           into = c('region','date'),
                                           fill = 'left')
-      df_record$region <- na.replace(df_record$region,'busan')
-      df_record$region <- str_replace_all(df_record$region,'\\[서','seoul')
+      df_record$region <- na.replace(df_record$region,'seoul')
+      df_record$region <- str_replace_all(df_record$region,'\\[부','busan')
       df_record$region <- str_replace_all(df_record$region,'\\[해외','foreign')
       df_record$horse_weight <- str_replace_all(df_record$horse_weight,
                                                 '^$','0')
@@ -116,10 +126,10 @@ sapply(1:length(xppath),function(k){
       record_unknown <- c('','실격','주행중지','출전제외','출전취소','^$')
       df_record$record <- ifelse(df_record$record %in% record_unknown,
                                  '0:0',df_record$record)
-      df_record$record <- ms(df_record$record) %>% seconds %>% str_remove_all('S')
+      df_record$record <- lubridate::ms(df_record$record) %>% seconds %>% str_remove_all('S')
       
-      #for(j in 1:nrow(df_record)){
-      sapply(1:nrow(df_record),function(j){
+      for(j in 1:nrow(df_record)){
+        #sapply(1:nrow(df_record),function(j){
         
         sqll <- paste(df_record[j,],collapse = "','") %>% str_remove_all('\\\\')
         sqll <- paste0("'",sqll,"'")
@@ -128,14 +138,17 @@ sapply(1:length(xppath),function(k){
         sqll_ub <- paste0("'",df_record[j,],"'")
         sqll_ud <- paste0(sqll_ua,'=',sqll_ub,collapse = ',')
         
-        sqll <- paste0('insert into horseinfo_record_busan values (',sqll,
+        sqll <- paste0('insert into horseinfo_record_seoul values (',sqll,
                        ') on duplicate key update ',sqll_ud)
         dbGetQuery(con,sqll)
-      })
-    }
+      }#)
+    } 
     dbDisconnect(con)
     Sys.sleep(0.5)
-    }
+  }
   Sys.sleep(2)
-})
+}#)
 remdr$closeall()
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

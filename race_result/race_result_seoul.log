@@ -1,0 +1,168 @@
+[1] "------"
+[1] "code start 2020-06-29 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 NA 12 11 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-06-30 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 NA 12 11 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-01 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 NA 12 11 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-02 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 NA 12 11 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-03 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 NA 12 11 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-04 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 15 14 15 14 15 NA 12 11 12 11
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-05 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 14 15 NA 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted
+[1] "------"
+[1] "code start 2020-07-06 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 14 15 NA 12 11 12
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in MySQL() : could not find function "MySQL"
+Calls: dbConnect
+Execution halted

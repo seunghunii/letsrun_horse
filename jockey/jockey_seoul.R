@@ -1,6 +1,10 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest','RSelenium','pbapply',
           'httr','tidyr','DBI','RMySQL','gtools')
-sapply(pkgs,require,character.only = TRUE)
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 # java -jar selenium-server-standalone-3.141.59.jar
 # lapply( dbListConnections( dbDriver( drv = "MySQL")), dbDisconnect)
@@ -11,7 +15,7 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 ###jockey information###
 url_jockey <- 'http://race.kra.co.kr/jockey/ProfileJockeyListActive.do?Act=09&Sub=1&meet=1'
@@ -68,3 +72,6 @@ for(k in 1:nrow(jockey_list)){
 }
 dbDisconnect(con)
 remdr$closeall()
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

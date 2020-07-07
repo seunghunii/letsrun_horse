@@ -1,0 +1,20 @@
+[1] "------"
+[1] "code start 2020-07-02 16:30:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+Error in ms(df_record$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted

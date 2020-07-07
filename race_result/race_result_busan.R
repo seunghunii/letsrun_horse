@@ -1,6 +1,10 @@
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
 pkgs <- c('dplyr','stringr','rvest',
           'httr','tidyr','DBI','RSelenium')
-sapply(pkgs,require,character.only = TRUE)
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 # java -jar selenium-server-standalone-3.141.59.jar 
 
@@ -30,9 +34,9 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444L,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
-for(k in 2:8){
+for(k in 1:4){
   
   xppath <- paste0('/html/body/div[1]/div[2]/div[1]/div[2]/table/tbody/tr[',k,']/td[3]/p/a[',1:tb_pgsource$race[k],']')
   
@@ -125,3 +129,6 @@ for(k in 2:8){
   Sys.sleep(3)
 }
 remdr$closeall()
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))

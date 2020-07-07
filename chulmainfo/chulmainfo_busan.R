@@ -1,6 +1,10 @@
-pkgs <- c('dplyr','stringr','rvest',
+print('------')
+print(paste('code start',as.character(Sys.time())))
+sttime <- Sys.time()
+
+pkgs <- c('dplyr','stringr','rvest','RSelenium',
           'httr','tidyr','DBI','RMySQL')
-sapply(pkgs,require,character.only = TRUE)
+sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
 # data crawl
 urll <- 'http://race.kra.co.kr/chulmainfo/ChulmaDetailInfoList.do?Act=02&Sub=1&meet=3'
@@ -27,7 +31,7 @@ eCaps <- list(
 
 remdr <- remoteDriver(port=4444,browser='chrome',
                       extraCapabilities = eCaps)
-remdr$open()
+remdr$open(silent = TRUE)
 
 weight_type_list <- list()
 for(l in 1:nrow(tmp)){
@@ -71,3 +75,6 @@ for(k in 1:nrow(tmp)){
   dbGetQuery(con,sqll)
   }
 dbDisconnect(con)
+
+timediff <- difftime(Sys.time(),sttime,units = 'mins') %>% as.numeric() %>% round(5)
+print(paste('code end',as.character(Sys.time()),',time spent',timediff,'mins'))
