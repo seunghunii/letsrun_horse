@@ -52,3 +52,93 @@ NULL
 NULL
 
 [1] "code end 2020-07-05 21:00:28 ,time spent 0.44675 mins"
+[1] "------"
+[1] "code start 2020-07-09 19:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[1] "code end 2020-07-09 19:00:32 ,time spent 0.51206 mins"
+[1] "------"
+[1] "code start 2020-07-12 21:00:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[1] "code end 2020-07-12 21:00:40 ,time spent 0.63196 mins"
+[1] "------"
+[1] "code start 2020-07-16 19:00:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[1] "code end 2020-07-16 19:00:33 ,time spent 0.52022 mins"

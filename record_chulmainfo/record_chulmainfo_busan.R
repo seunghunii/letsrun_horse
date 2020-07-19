@@ -2,7 +2,7 @@ print('------')
 print(paste('code start',as.character(Sys.time())))
 sttime <- Sys.time()
 
-pkgs <- c('dplyr','stringr','rvest',
+pkgs <- c('dplyr','stringr','rvest','RSelenium',
           'httr','tidyr','DBI','RMySQL')
 sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 

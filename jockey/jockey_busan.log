@@ -46,3 +46,75 @@ data frame with 0 columns and 0 rows
 NULL
 
 [1] "code end 2020-07-05 21:30:20 ,time spent 0.30538 mins"
+[1] "------"
+[1] "code start 2020-07-10 18:30:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[1] "code end 2020-07-10 18:30:20 ,time spent 0.30405 mins"
+[1] "------"
+[1] "code start 2020-07-12 21:30:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[1] "code end 2020-07-12 21:30:20 ,time spent 0.30779 mins"
+[1] "------"
+[1] "code start 2020-07-17 18:30:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools 
+     TRUE      TRUE 
+data frame with 0 columns and 0 rows
+data frame with 0 columns and 0 rows
+[1] TRUE
+[[1]]
+NULL
+
+[1] "code end 2020-07-17 18:30:20 ,time spent 0.31673 mins"
