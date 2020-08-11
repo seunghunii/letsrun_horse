@@ -143,3 +143,260 @@ Error: 	 Summary: NoSuchDriver
  	 Detail: A session is either terminated or not started
 	 Further Details: run errorDetails method
 Execution halted
+[1] "------"
+[1] "code start 2020-07-19 20:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:No active session with ID 823b8bf894fef5782c038138b99c6af2
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-07-23 18:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:No active session with ID 838c7c0b663109f0958ca9de21be9b35
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-07-26 20:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-184-generic', java.version: '1.8.0_252'
+Driver info: driver.version: unknown
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+ 	 class: org.openqa.selenium.NoSuchSessionException
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-07-30 18:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:No active session with ID e92ceee99eebe5ed6399286154b0a66b
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-08-02 20:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-184-generic', java.version: '1.8.0_252'
+Driver info: driver.version: unknown
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+ 	 class: org.openqa.selenium.NoSuchSessionException
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-08-06 18:00:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'localhost', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-184-generic', java.version: '1.8.0_252'
+Driver info: driver.version: unknown
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+ 	 class: org.openqa.selenium.NoSuchSessionException
+	 Further Details: run errorDetails method
+Execution halted
+[1] "------"
+[1] "code start 2020-08-09 20:00:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:dplyr’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+    dplyr   stringr     rvest RSelenium   pbapply      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+   RMySQL    gtools lubridate 
+     TRUE      TRUE      TRUE 
+
+Selenium message:No active session with ID 706c9220b23896cb1fbeea42ef656047
+
+Error: 	 Summary: NoSuchDriver
+ 	 Detail: A session is either terminated or not started
+	 Further Details: run errorDetails method
+Execution halted

@@ -418,3 +418,451 @@ In function_list[[i]](value) : NAs introduced by coercion
 Error in MySQL() : could not find function "MySQL"
 Calls: dbConnect
 Execution halted
+[1] "------"
+[1] "code start 2020-07-19 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-20 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-21 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-22 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-23 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-24 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 13 13 14 15 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-25 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 15 14 15 13 13 14 15 14 15 14
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-26 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL      httr     tidyr       DBI RSelenium 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in na.replace(df_dataa$rating, "0") : 
+  could not find function "na.replace"
+Execution halted
+[1] "------"
+[1] "code start 2020-07-27 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-07-28 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-07-29 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-07-30 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-07-31 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 14 15 14 15 13 13 14 15 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-01 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 15 14 15 14 15 13 13 14 15 14
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-02 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-03 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-04 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-05 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-06 20:55:01"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-07 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 12 15 14 15 14 15 13 13 14 15
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-08 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] 15 12 15 14 15 14 15 13 13 14
+Error in ms(df_dataa$record) : could not find function "ms"
+Calls: %>% -> eval -> eval
+Execution halted
+[1] "------"
+[1] "code start 2020-08-09 20:55:02"
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+    dplyr   stringr     rvest    RMySQL    gtools      httr     tidyr       DBI 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE 
+RSelenium 
+     TRUE 
+ [1] NA 15 12 15 14 15 14 15 13 13
+Warning message:
+In function_list[[i]](value) : NAs introduced by coercion
+Error in 1:tb_pgsource$race[k] : NA/NaN argument
+Calls: paste0
+Execution halted

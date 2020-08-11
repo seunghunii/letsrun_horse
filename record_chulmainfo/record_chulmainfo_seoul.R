@@ -2,7 +2,7 @@ print('------')
 print(paste('code start',as.character(Sys.time())))
 sttime <- Sys.time()
 
-pkgs <- c('dplyr','stringr','rvest','RSelenium',
+pkgs <- c('dplyr','stringr','rvest','RSelenium','lubridate',
           'httr','tidyr','DBI','RMySQL')
 sapply(pkgs,require,character.only = TRUE,quietly = TRUE)
 
@@ -76,7 +76,7 @@ sapply(1:nrow(tmp),function(l){
     tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
                                                       function(x) str_replace_all(x,'^$','0:0.0'))
     tmp_sep[,c('S1F','G3F','G1F','record')] <- lapply(tmp_sep[,c('S1F','G3F','G1F','record')],
-                                                      function(x) ms(x) %>% seconds %>% str_remove_all('S'))
+                                                      function(x) lubridate::ms(x) %>% seconds %>% str_remove_all('S'))
     tmp_sep <- tmp_sep %>% separate(horse_weight,sep='\\(',extra = 'drop',fill = 'right',
                                     into = c('horse_weight','weight_diff'))
     tmp_sep$weight_diff <- tmp_sep$weight_diff %>% str_remove_all('\\)')
