@@ -46,8 +46,8 @@ for(k in 1:length(xppath)){
     ab <- remdr$findElement(using = 'xpath',xppath[k])
     ab$clickElement()
     
-    con <- dbConnect(MySQL(),user='race',password='koreafirst',
-                     host='49.50.165.83',dbname='horse',port=7325)
+    con <- dbConnect(MySQL(),user=mysql_id,password=mysql_pwd,
+                 host=mysql_ip,dbname=mysql_db,port=mysql_port)
     dbGetQuery(con,'set names utf8')
     
     Sys.sleep(0.5)
