@@ -90,8 +90,8 @@ sapply(1:nrow(tmp),function(l){
     df_dataa[,c('S1F','G3F','G1F')] <- sapply(df_dataa[,c('S1F','G3F','G1F')],
                                               function(v)na.replace(v,0))
   
-    con <- dbConnect(MySQL(),user='race',password='koreafirst',
-                     host='49.50.165.83',dbname='horse',port=7325)
+    con <- dbConnect(MySQL(),user=mysql_id,password=mysql_pwd,
+                 host=mysql_ip,dbname=mysql_db,port=mysql_port)
     dbGetQuery(con,'set names utf8')
     
     df_jockey <- dbGetQuery(con,'select * from jockey_info')
