@@ -58,8 +58,8 @@ tmp <- cbind(tmp[,1:4],
 tmp$weight_type <- as.character(tmp$weight_type)
 
 # connect db, set utf8
-con <- dbConnect(MySQL(),user='race',password='koreafirst',
-                 host='49.50.165.83',dbname='horse',port=7325)
+con <- dbConnect(MySQL(),user=mysql_id,password=mysql_pwd,
+                 host=mysql_ip,dbname=mysql_db,port=mysql_port)
 dbGetQuery(con,'set names utf8')
 
 for(k in 1:nrow(tmp)){
