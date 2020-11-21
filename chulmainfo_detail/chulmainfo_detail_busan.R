@@ -37,8 +37,8 @@ remdr$open(silent = TRUE)
 
 result_bb <- list()
 
-con <- dbConnect(MySQL(),user='race',password='koreafirst',
-                 host='49.50.165.83',dbname='horse',port=7325)
+con <- dbConnect(MySQL(),user=mysql_id,password=mysql_pwd,
+                 host=mysql_ip,dbname=mysql_db,port=mysql_port)
 dbGetQuery(con,'set names utf8')
 
 for(l in 1:nrow(tmp)){
