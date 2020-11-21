@@ -56,8 +56,8 @@ sapply(1:length(xppath),function(k){
   doc[,c(2,3,4,5,12,13,14)] <- apply(doc[,c(2,3,4,5,12,13,14)],2,
                             function(x) na.replace(x,0))
   
-  con <- dbConnect(MySQL(),user='race',password='koreafirst',
-                   host='49.50.165.83',dbname='horse',port=7325)
+  con <- dbConnect(MySQL(),user=mysql_id,password=mysql_pwd,
+                 host=mysql_ip,dbname=mysql_db,port=mysql_port)
   
   sapply(1:nrow(doc),function(i){
     sqll <- paste(collapse(doc[i,]),collapse = "','")
